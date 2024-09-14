@@ -45,55 +45,55 @@
 // export default Gpt ;
 
 
-import React, { useState } from 'react';
-import { OpenAI } from 'openai';
+// import React, { useState } from 'react';
+// import { OpenAI } from 'openai';
 
-// Configuración de OpenAI
+// // Configuración de OpenAI
 
-const test = import.meta.env.VITE_APP_API;
-const openai = new OpenAI({
-apiKey: test,
-dangerouslyAllowBrowser: true 
-});
+// const test = import.meta.env.VITE_APP_API;
+// const openai = new OpenAI({
+// apiKey: test,
+// dangerouslyAllowBrowser: true 
+// });
 
-// Función para obtener respuesta del chatbot
-const getResponseFromChatbot = async (userMessage) => {
-  try {
-    const response = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo', // Puedes usar "gpt-3.5-turbo" o versiones superiores
-      messages: [{ role: 'user', content: userMessage }],
-    });
-    return response.choices[0].message.content;
-  } catch (error) {
-    console.error('Error al obtener respuesta del chatbot:', error);
-    throw error;
-  }
-};
+// // Función para obtener respuesta del chatbot
+// const getResponseFromChatbot = async (userMessage) => {
+//   try {
+//     const response = await openai.chat.completions.create({
+//       model: 'gpt-3.5-turbo', // Puedes usar "gpt-3.5-turbo" o versiones superiores
+//       messages: [{ role: 'user', content: userMessage }],
+//     });
+//     return response.choices[0].message.content;
+//   } catch (error) {
+//     console.error('Error al obtener respuesta del chatbot:', error);
+//     throw error;
+//   }
+// };
 
-const Gpt = () => {
-  const [response, setResponse] = useState('');
-  const [loading, setLoading] = useState(false);
+// const Gpt = () => {
+//   const [response, setResponse] = useState('');
+//   const [loading, setLoading] = useState(false);
 
-  const handleClick = async () => {
-    setLoading(true);
-    try {
-      const chatbotResponse = await getResponseFromChatbot("¿que hora es?");
-      setResponse(chatbotResponse);
-    } catch (error) {
-      setResponse('Hubo un error al obtener la respuesta.');
-    } finally {
-      setLoading(false);
-    }
-  };
+//   const handleClick = async () => {
+//     setLoading(true);
+//     try {
+//       const chatbotResponse = await getResponseFromChatbot("¿que hora es?");
+//       setResponse(chatbotResponse);
+//     } catch (error) {
+//       setResponse('Hubo un error al obtener la respuesta.');
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
 
-  return (
-    <>
-      <h1>PRUEBA GPT</h1>
-      <button onClick={handleClick}>Obtener Respuesta</button>
-      {loading && <p>Cargando...</p>}
-      {response && <p>Respuesta: {response}</p>}
-    </>
-  );
-};
+//   return (
+//     <>
+//       <h1>PRUEBA GPT</h1>
+//       <button onClick={handleClick}>Obtener Respuesta</button>
+//       {loading && <p>Cargando...</p>}
+//       {response && <p>Respuesta: {response}</p>}
+//     </>
+//   );
+// };
 
-export default Gpt;
+// export default Gpt;
