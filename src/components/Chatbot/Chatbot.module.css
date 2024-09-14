@@ -1,0 +1,89 @@
+.chatbotContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+  }
+  
+  /* Encabezado del chatbot */
+  .header {
+    background-color:rgba(24,37,79,255);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+   
+  }
+  
+  .headerText {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Ventana de mensajes */
+  .chatWindow {
+    flex: 1;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #ecf0f1;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+  
+  .message.user {
+    background-color: #afc6e7;
+    text-align: right;
+    align-self: flex-end;
+  }
+  
+  .message.bot {
+    background-color: #f4f4f4;
+    text-align: left;
+    align-self: flex-start;
+  }
+  
+  /* Input de mensajes */
+  .inputSection {
+    display: flex;
+    background-color: white;
+    border-top: 1px solid #ddd;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .sendButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .sendIcon {
+    width: 24px;
+    height: 24px;
+  }
