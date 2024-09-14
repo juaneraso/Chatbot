@@ -86,14 +86,18 @@
 //     }
 //   };
 
-//   return (
-//     <>
-//       <h1>PRUEBA GPT</h1>
-//       <button onClick={handleClick}>Obtener Respuesta</button>
-//       {loading && <p>Cargando...</p>}
-//       {response && <p>Respuesta: {response}</p>}
-//     </>
-//   );
-// };
 
-// export default Gpt;
+const Gpt = () =>{ 
+
+
+  return (
+    <>
+      <h1>PRUEBA GPT</h1>
+      {/* <button onClick={handleClick}>Obtener Respuesta</button>
+      {loading && <p>Cargando...</p>}
+      {response && <p>Respuesta: {response}</p>} */}
+    </>
+  );
+};
+
+export default Gpt;
