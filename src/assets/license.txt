@@ -1,0 +1,8 @@
+Model Information:
+* title:	Zoochosis - Doc
+* source:	https://sketchfab.com/3d-models/zoochosis-doc-dc8c80791e0d4937a113c806b5099833
+* author:	MG Rips (https://sketchfab.com/MG_GameRips)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
